@@ -7,7 +7,6 @@ Master<br>
 Develop<br>
 [![Hydrography: Warning Activated Bayesian State Space Modelling & Inference](https://github.com/repatterning/arc-state-space-mixture/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/repatterning/arc-state-space-mixture/actions/workflows/main.yml)
 
-
 <br>
 <br>
 
@@ -19,4 +18,3 @@ Develop<br>
 
 <br>
 <br>
-
