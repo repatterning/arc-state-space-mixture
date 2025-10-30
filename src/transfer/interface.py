@@ -70,5 +70,5 @@ class Interface:
             logging.info(strings)
             messages = src.s3.ingress.Ingress(
                 service=self.__service, bucket_name=self.__s3_parameters.internal).exc(
-                strings=strings, tags={'project': 'hydrography'})
+                strings=strings, tags={'project': self.__configurations.project_tag})
             logging.info(messages)
