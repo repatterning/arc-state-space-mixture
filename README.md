@@ -1,9 +1,5 @@
 <br>
 
-Warning Activated Bayesian State Space Modelling & Inference
-
-<br>
-
 Master<br>
 [![Hydrography: Warning Activated Bayesian State Space Modelling & Inference](https://github.com/repatterning/arc-state-space-mixture/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/repatterning/arc-state-space-mixture/actions/workflows/main.yml)
 
