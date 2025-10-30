@@ -1,4 +1,4 @@
-name: 'Hydrography: Latest'
+name: 'Hydrography: Warning Activated Bayesian State Space Modelling & Inference'
 
 on: [push]
 
@@ -14,7 +14,7 @@ jobs:
       max-parallel: 4
       fail-fast: false
       matrix:
-        python-version: ['3.11']
+        python-version: ['3.12']
 
     permissions:
       contents: read
