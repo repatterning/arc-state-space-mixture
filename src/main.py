@@ -69,6 +69,6 @@ if __name__ == '__main__':
 
     if arguments.get('cpu') | (not gpu):
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
-        tf.config.set_visible_devices([], 'GPU')
+        tf.config.set_visible_devices([], 'CPU')
 
     main()
