@@ -64,11 +64,13 @@ if __name__ == '__main__':
     connector, s3_parameters, service, arguments = src.preface.interface.Interface().exc()
 
     # Devices
-    os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
+    os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     gpu = tf.config.list_physical_devices('GPU')
 
     if arguments.get('cpu') | (not gpu):
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
         tf.config.set_visible_devices([], 'CPU')
+    else:
+        tf.config.set_visible_devices(gpu[0], 'GPU')
 
     main()

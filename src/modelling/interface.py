@@ -62,6 +62,6 @@ class Interface:
             inference = __architecture(master=master)
             message = __persist(inference=inference, partition=partition)
             computations.append(message)
-        latest = dask.compute(computations, scheduler='threads')[0]
+        latest = dask.compute(computations, scheduler='processes')[0]
 
         logging.info(latest)
