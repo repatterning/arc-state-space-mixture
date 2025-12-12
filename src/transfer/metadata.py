@@ -25,10 +25,9 @@ class Metadata:
         self.__connector = connector
         self.__configurations = config.Config()
 
-    def exc(self, architecture: str) -> dict:
+    def exc(self) -> dict:
         """
 
-        :param architecture:
         :return:
         """
 
