@@ -39,9 +39,9 @@ class Config:
         '''
         Local Paths
         '''
-        sections = ['assets', self.architecture]
+        sections = ['architecture', self.architecture, 'live']
         self.warehouse: str = os.path.join(os.getcwd(), 'warehouse')
-        self.assets_ = os.path.join(self.warehouse, *sections)
+        self.pathway_ = os.path.join(self.warehouse, *sections)
 
         '''
         Cloud

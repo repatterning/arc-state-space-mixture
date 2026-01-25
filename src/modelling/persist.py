@@ -42,7 +42,7 @@ class Persist:
 
 
         endpoint = os.path.join(
-            self.__configurations.assets_, str(partition.catchment_id), str(partition.ts_id))
+            self.__configurations.pathway_, str(partition.catchment_id), str(partition.ts_id))
 
         message = '|'.join((
             str(partition.catchment_id),
