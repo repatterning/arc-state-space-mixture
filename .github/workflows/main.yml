@@ -180,8 +180,8 @@ jobs:
         with:
           package-name: ${{ github.event.repository.name }}
           package-type: 'container'
-          min-versions-to-keep: 0
-          delete-untagged: 'true'
+          min-versions-to-keep: 1
+          delete-only-untagged-versions: true
 
   ecr:
     name: Amazon Elastic Container Registry
