@@ -1,6 +1,7 @@
 tensorflow[and-cuda]==2.20.0
 tensorflow-probability==0.25.0
 keras==3.13.2
+tf-keras
 dask[complete]>=2025.1
 dask-expr
 graphviz>=0.20.3
