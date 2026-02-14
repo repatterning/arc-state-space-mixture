@@ -3,13 +3,13 @@ import collections
 import logging
 import typing
 
+import keras
 import numpy as np
 import pandas as pd
 import tensorflow as tf
 import tensorflow_probability as tfp
 import tensorflow_probability.python.experimental.util as tfu
 import tensorflow_probability.python.sts.components as tfc
-import tf_keras
 
 import src.elements.inference as ifr
 import src.elements.master as mr
@@ -65,7 +65,7 @@ class Architecture:
         elb: tf.Tensor = tfp.vi.fit_surrogate_posterior(
             target_log_prob_fn=model.joint_distribution(observed_time_series=_training).log_prob,
             surrogate_posterior=posterior,
-            optimizer=tf_keras.optimizers.Adam(learning_rate=self.__arguments.get('learning_rate')),
+            optimizer=keras.optimizers.Adam(learning_rate=self.__arguments.get('learning_rate')),
             num_steps=self.__arguments.get('n_variational_steps'),
             jit_compile=True,
             seed=self.__arguments.get('seed'),
