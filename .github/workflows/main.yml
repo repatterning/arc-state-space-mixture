@@ -1,4 +1,4 @@
-name: 'Hydrography: Warning Activated Bayesian State Space Modelling & Inference'
+name: 'Hydrography: Warning Activated Forecasting'
 
 on: [push]
 
